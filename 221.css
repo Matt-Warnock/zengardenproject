@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.intro {
+  display: grid;
+  grid-template: repeat(5, 5fr) / repeat(5, 5fr);
+  background-color: #c879b2;
+  color: white;
+}
+
+header {
+  grid-row-end: span 3;
+  grid-column-end: span 2;
+  display: flex;
+  align-items: stretch;
+}
+header h1 {
+  height: 80px;
+  transform: rotate(-90deg);
+  font-size: .7em;
+}
+header h2 {
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 200px;
+  padding: 300px 0 0 10px;
+  background: #0d2c40 url("icon-star.svg") center bottom/contain no-repeat;
+}
+.summary {
+  grid-area: 3 / 3 / 4 /span 3;
+  background: #f15b31 url("icon-circles.svg") center left/contain no-repeat;
+}
+.preamble {
+  grid-area: 4 / 2 / span 2 / span 3;
+}
